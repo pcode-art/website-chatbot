@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="description"
+        content="My dream college is a beacon of opportunity, fostering growth, community, and academic excellence, igniting a path to success.">
+    <meta name="keywords" content="My Dream College">
+
+    <title>My College</title>
+
+    <link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="stylesheet" href="college.css">
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+</head>
+
+<body>
+
+    <section class="header">
+        <nav>
+            <a href='/'><img src="image/logo.png" id="logo-img"></a>
+
+            <div class="nav-links" id="navLinks">
+
+                <span class="icon" onclick="hidemenu()">&#10005;</span>
+                <ul>
+                    <li><a href='#'>Home</a></li>
+                    <li><a href='#'>Admission</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href='#'>Fees</a></li>
+                    <li><a href='#'>Contact</a></li>
+                </ul>
+            </div>
+            <span class="icon" onclick="showmenu()">&#9776;</span>
+             <!-- Add message icon here -->
+             <span class="material-symbols-outlined" onclick="toggleChatbot()" title="College Companion ChatBOT">mode_comment</span>
+        </nav>
+
+        <div class="text-box">
+            <h1>K.K. Wagh Institute of Engineering Education and Research </h1>
+            <p>To be a valuable resource for industry and society through quality education and research in engineering and manegement</p>
+
+            <a class='hero-btn' href="https://kkwagh.edu.in/engineering "title = "Goes to Official Website">Admission Open</a>
+        </div>
+    </section>
+
+    <div id="chat-container" style="display: none;">
+        <span class="close-icon" onclick="hideChatbot()">✖</span>
+        <div id="chat"></div>
+        <h1>🤖 ChatBOT</h1><br>
+        <input type="text" id="user-input" placeholder="Hi there👋 ! How can I help you today ?">
+        <button onclick="askQuestion()">Ask</button>
+
+    </div>
+        
+        
+           
+        
+        
+        
+
+
+
+    <section class="course" id="course_call">
+        <h1>Course We Offer</h1>
+        <p>We offer to best computer science course for student by KKWIEER</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h2>Engineering</h2>
+                <p>Engineering is a branch of science and technology that is concerned with the building, designing,
+                     and use of machines and structures. It is a professional degree program that is four years long 
+                     and awards a Bachelor of Engineering.</p>
+            </div>
+
+            <div class="course-col">
+                <h2>MCA</h2>
+                <p>MCA stands for Master of Computer Applications. It is a two-year postgraduate program that focuses on 
+                    computer applications. The course is designed to provide students with the knowledge and skills that 
+                    are required to develop and implement computer applications. </p>
+            </div>
+
+            <div class="course-col">
+                <h2>MBA</h2>
+                <p>MBA stands for Master of Business Administration. MBA courses are 2-year PG-level degree programmes
+                     that focus on various aspects of business management and administration. MBA courses are designed to equip 
+                     students with the skills and knowledge needed to  navigate the complexities of the business world. </p>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+    <section class="campus">
+        <h1> Our Campus</h1>
+
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="lib.jpg" alt="">
+                <div class="layer">
+                    <h3>Library</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="hi.jpg" alt="">
+                <div class="layer">
+                    <h3>Ground</h3>
+                </div>
+            </div>
+
+            <div class="campus-col">
+                <img src="images (3).jpeg.jpg" alt="">
+                <div class="layer">
+                    <h3>Education</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Facilities Section-->
+
+    <section class="facilities">
+        <h1> Our facilities</h1>
+        <p>Facilities provided by KKWIEER to students</p>
+
+        <div class="row">
+            <div class="facilities-col">
+                <img src="canteen.jpg" alt="">
+                <h3>Canteen</h3>
+                <p>The objective of the Canteen and meal service is to protect by reducing the risk of foodborne
+                    illness, with proper sanitary conditions.</p>
+            </div>
+
+            <div class="facilities-col">
+                
+                <img src="gym.jpg" alt=""><br>
+                <h3>GYM</h3><br>
+                <p>Multifunctional gym facility that is open to students and staff, offering a wide variety of 
+                    equipments to help you keep fit on campus. In order to ensure a sound body and mind, students 
+                    are given special attention to health and fitness..</p>
+            </div>
+
+            <div class="facilities-col">
+                <img src="hostel.jpg" alt="">
+                <h3>Hostel</h3>
+                <p>Hostel consists of a separate mess, administrative office, warden quarter. In addition to well
+                    furnished rooms.</p>
+            </div>
+        </div>
+    </section>
+
+   
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>The KK Wagh Institute provide one of the earliest form of technical studies,
+            which has been vital in setting up the standard of brilliance.</p>
+        
+    </section>
+
+    <!--Javascript is Start-->
+    <script src="script.js"></script>
+    <script>
+        function toggleChatbot() {
+            var chatContainer = document.getElementById("chat-container");
+            // Toggle the display style
+            chatContainer.style.display = (chatContainer.style.display === "none") ? "block" : "none";
+        }
+        function hideChatbot() {
+        var chatContainer = document.getElementById("chat-container");
+        // Hide the chat container
+        chatContainer.style.display = "none";
+    }
+    </script>
+    
+</body>
+
+
+
+</html>
